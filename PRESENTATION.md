@@ -61,5 +61,5 @@ https://wiki.jenkins-ci.org/display/JENKINS/xUnit+Plugin
 And to tell ctest to output an XML, you can follow this StackOverflow
 answer instructions.
 
-stackoverflow.com/questions/21633716/producing-ctest-results-in-jenkins-xunit-1-58/21688776#21688776
+https://stackoverflow.com/questions/21633716/producing-ctest-results-in-jenkins-xunit-1-58/21688776#21688776
 
