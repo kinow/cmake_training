@@ -1,3 +1,18 @@
+# Continuous Integration
+
+>In software engineering, continuous integration (CI) is the practice of merging all
+>developer working copies to a shared mainline several times a day. Grady Booch
+>first named and proposed CI in his 1991 method,[1] although he did not advocate
+>integrating several times a day. Extreme programming (XP) adopted the concept
+>of CI and did advocate integrating more than once per day - perhaps as many
+>as tens of times per day.
+
+An easier definition might be:
+
+You continuously integrates your code, in short amounts of time, so that you
+find issues sooner. The way you will integrate changes into your code, will
+change according to your project nature, environment, development lifecycle,
+people involved, etc.
 
 ## Travis CI
 
