@@ -1,15 +1,27 @@
 # From: http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
-
+# MPI settings copied from Julia project: https://github.com/JuliaParallel/MPI.jl/blob/master/.travis.yml
 # Enable C++ support
 language: cpp
+# Choose operating systems and enable sudo
+os:
+  - linux
+sudo: required
 # Compiler selection
 compiler:
   - clang
   - gcc
+# Install build tools
+env:
+  - MPI_IMPL=mpich
+  - MPI_IMPL=openmpi
+before_install:
+  - sh ./conf/travis-install-mpi.sh $MPI_IMPL
+  - export PATH=$HOME/OpenMPI/bin:$PATH
 # Build steps
 script:
   - cd ex9
   - mkdir build
   - cd build
-  - cmake .. && make
+  - cmake ..
+  - make
   - ctest
