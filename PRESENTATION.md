@@ -9,8 +9,8 @@
 
 An easier definition might be:
 
-You continuously integrates your code, in short amounts of time, so that you
-find issues sooner. The way you will integrate changes into your code, will
+You continuously integrates your code, so that you find issues sooner.
+The way you will integrate changes into your code, will
 change according to your project nature, environment, development lifecycle,
 people involved, etc.
 
